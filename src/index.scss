@@ -1,0 +1,34 @@
+$color_1: #37306b;
+$color_2: #66347f;
+$color_3: #9e4784;
+$color_4: #d27685;
+$color_5: #ffc800;
+$color_6: #ffdb58;
+$color_black: #222222;
+$color_white: #faf9f6;
+
+@mixin text_color_white() {
+  background: #faf9f6;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@mixin text_color_yellow() {
+  background: linear-gradient(to bottom, $color_5, $color_6);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::selection {
+  background: #ffdb58ad;
+}

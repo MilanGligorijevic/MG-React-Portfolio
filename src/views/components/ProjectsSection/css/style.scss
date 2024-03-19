@@ -1,0 +1,42 @@
+@import "../../../../index.scss";
+
+.projects_section {
+  width: 80%;
+  display: flex;
+  gap: 8%;
+  margin-bottom: 7%;
+  // position: sticky;
+  // top: 20%;
+
+  .text_box {
+    @include text_color_white;
+    .text_title {
+      font-size: 58px;
+      font-weight: 500;
+
+      margin-bottom: 50px;
+
+      .beautiful {
+        @include text_color_yellow;
+      }
+    }
+
+    .text_body {
+      font-size: 38px;
+      width: 400px;
+    }
+  }
+  .slide {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ffc800;
+  }
+  .swiper-button-disabled {
+    display: none;
+  }
+}

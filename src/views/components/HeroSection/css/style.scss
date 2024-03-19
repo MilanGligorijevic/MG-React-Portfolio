@@ -1,0 +1,45 @@
+@import "../../../../index.scss";
+
+.hero_section {
+  width: 80%;
+  height: 600px;
+  margin-top: 7%;
+  margin-bottom: 5%;
+
+  &-text {
+    font-size: 112px;
+    font-weight: 500;
+    @include text_color_white;
+  }
+  .cursor {
+    background: linear-gradient(to bottom, #ffdb58, #ffc800);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+  }
+
+  .hero_section-text {
+    position: relative;
+    margin-bottom: 5%;
+    .svg_arrow {
+      z-index: 3;
+      position: absolute;
+      top: 80px;
+      left: -55px;
+    }
+    .web {
+      @include text_color_yellow;
+    }
+  }
+  .sliding_text_container {
+    width: 50%;
+    font-size: 18vh;
+    white-space: nowrap;
+    color: $color_5;
+    opacity: 0.18;
+  }
+}

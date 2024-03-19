@@ -1,0 +1,113 @@
+@import "../../../../index.scss";
+
+.skill_box {
+  width: 265px;
+  height: 195px;
+  background-color: #ffffff;
+  border-radius: 44.16px;
+  box-shadow: 0px 4px 3px 2px hsla(0, 0%, 0%, 0.253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // &:hover {
+  //   transition: 0.3s ease-in-out;
+  //   transform: scale(1.1);
+  //   z-index: 6;
+  // }
+}
+
+.bootstrap {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  // transform: rotate(-3.58deg);
+  z-index: 2;
+}
+
+.css3 {
+  position: absolute;
+  top: 7%;
+  left: 33%;
+  // transform: rotate(10.68deg);
+  z-index: 4;
+}
+
+.figma {
+  position: absolute;
+  top: 63%;
+  left: 33%;
+  // transform: rotate(-10.49deg);
+  z-index: 4;
+}
+
+.firebase {
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  // transform: rotate(13.05deg);
+  z-index: 2;
+}
+
+.html5 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  // transform: rotate(-4.12deg);
+  z-index: 2;
+}
+
+.js {
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  // transform: rotate(-25deg);
+  z-index: 3;
+}
+
+.react {
+  position: absolute;
+  top: 12%;
+  left: 67%;
+  // transform: rotate(25.68deg);
+  z-index: 4;
+}
+
+.redux {
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  // transform: rotate(-25deg);
+  z-index: 1;
+}
+
+.sass {
+  position: absolute;
+  top: 61%;
+  left: 20%;
+  // transform: rotate(-23.92deg);
+}
+
+.ts {
+  position: absolute;
+  top: 35%;
+  left: 22%;
+  // transform: rotate(14.64deg);
+  z-index: 4;
+}
+
+.vue {
+  position: absolute;
+  top: 33%;
+  left: 54%;
+  // transform: rotate(17.42deg);
+  z-index: 3;
+}
+
+.framermotion {
+  position: absolute;
+  top: 34%;
+  left: 67%;
+  // transform: rotate(17.42deg);
+  z-index: 3;
+}

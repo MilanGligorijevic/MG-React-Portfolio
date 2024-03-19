@@ -1,0 +1,34 @@
+@import "../../../../index.scss";
+
+.main_navigation {
+  width: 480px;
+  height: 64px;
+  position: fixed;
+  bottom: -100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgba($color_6, 0.71),
+    rgba($color_5, 0.71)
+  );
+  border-radius: 44.16px;
+
+  .link_btn {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    .link {
+      text-decoration: none;
+      color: $color_black;
+
+      &:hover {
+        color: $color_6;
+      }
+    }
+  }
+}

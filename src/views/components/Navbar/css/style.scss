@@ -1,0 +1,25 @@
+@import "../../../../index.scss";
+
+.main_navbar {
+  width: 80vw;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   background-color: red;
+
+  .navbar_links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 11%;
+
+    .link {
+      font-size: 29px;
+      font-weight: 500;
+      @include text_color_yellow;
+    }
+  }
+}
