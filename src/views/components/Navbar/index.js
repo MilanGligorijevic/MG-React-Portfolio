@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./css/style.scss";
-import logo from "../../assets/svgs/logo.svg";
-import { delay, motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import scrollWithOffset from "../../utils/functions";

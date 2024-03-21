@@ -14,7 +14,7 @@ const buttonVariants = {
 function Button(props) {
   return (
     <motion.button className="btn" variants={buttonVariants} whileHover="hover">
-      <a href={props.link} target="_blank">
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
         <div className="btn_text">{props.text}</div>
       </a>
     </motion.button>
