@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./css/style.scss";
 import { motion } from "framer-motion";
 import AnimateWord from "../AnimateWord";
+import NavbarMobile from "../NavbarMobile";
+import MenuButton from "../MenuButton";
 
 const sliderTextVariants = {
   initial: {
@@ -52,6 +54,8 @@ function HeroSection() {
         variants={mouseVariants}
         animate="default"
       ></motion.div>
+      {/* <NavbarMobile/> */}
+      <MenuButton />
       <div className="hero_section-text">
         I'm Milan <br />
         <div className="svg_arrow">
