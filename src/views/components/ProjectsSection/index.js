@@ -11,6 +11,8 @@ import oldPortfolioImage from "../../assets/img/oldportfolio.PNG";
 import jtmPlastImage from "../../assets/img/jtmplastimage.PNG";
 import azWebShop from "../../assets/svgs/azwebshop.svg";
 import chatApp from "../../assets/svgs/chatapp.svg";
+import jtmPlast from "../../assets/svgs/jtmplast.svg";
+import resumeLogo from "../../assets/svgs/resume.svg";
 import { useInView, useScroll, useTransform } from "framer-motion";
 import AnimateWord from "../AnimateWord";
 import { motion } from "framer-motion";
@@ -76,12 +78,12 @@ function ProjectsSection() {
           />
           <ProjectBoxMobile
             name={"JTM Plast"}
-            image={azWebShop}
+            image={jtmPlast}
             link={"https://www.jtmplast.rs/"}
           />
           <ProjectBoxMobile
             name={"First Portfolio"}
-            image={azWebShop}
+            image={resumeLogo}
             link={"https://clinquant-cuchufli-8dff01.netlify.app/"}
           />
         </div>

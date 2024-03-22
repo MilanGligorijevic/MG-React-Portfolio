@@ -17,33 +17,23 @@ import SkillBox from "../SkillBox";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 function SkillsContainerMobile() {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const paddingChange = useTransform(scrollYProgress, [0, 1], [0, 40]);
   return (
     <>
       <div className="skills_title_mobile">Skillset</div>
-      <motion.div
-        className="skills_container_mobile"
-        ref={ref}
-        style={{ padding: paddingChange }}
-      >
+      <div className="skills_container_mobile">
         <SkillBox svg={bootstrap} class={"bootstrap"} rotate={-3.58} />
-        <SkillBox svg={css3} class={"css3"} rotate={10.68} />
-        <SkillBox svg={figma} class={"figma"} rotate={-10.49} />
-        <SkillBox svg={firebase} class={"firebase"} rotate={13.05} />
+        <SkillBox svg={css3} class={"css3"} rotate={8.68} />
+        <SkillBox svg={figma} class={"figma"} rotate={-5.49} />
+        <SkillBox svg={firebase} class={"firebase"} rotate={10.05} />
         <SkillBox svg={html5} class={"html5"} rotate={-4.12} />
-        <SkillBox svg={js} class={"js"} rotate={-25} />
-        <SkillBox svg={react} class={"react"} rotate={25.68} />
-        <SkillBox svg={redux} class={"redux"} rotate={-25} />
-        <SkillBox svg={sass} class={"sass"} rotate={-23.92} />
-        <SkillBox svg={ts} class={"ts"} rotate={14.64} />
-        <SkillBox svg={vue} class={"vue"} rotate={17.42} />
-        <SkillBox svg={framermotion} class={"framermotion"} rotate={-25} />
-      </motion.div>
+        <SkillBox svg={js} class={"js"} rotate={-15} />
+        <SkillBox svg={react} class={"react"} rotate={12.68} />
+        <SkillBox svg={redux} class={"redux"} rotate={-12} />
+        <SkillBox svg={sass} class={"sass"} rotate={-15.92} />
+        <SkillBox svg={ts} class={"ts"} rotate={10.64} />
+        <SkillBox svg={vue} class={"vue"} rotate={10.42} />
+        <SkillBox svg={framermotion} class={"framermotion"} rotate={-8} />
+      </div>
     </>
   );
 }

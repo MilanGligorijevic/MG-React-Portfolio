@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./css/style.scss";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import AnimateWord from "../AnimateWord";
 import { useMediaQuery } from "react-responsive";
 import { mobileScreen } from "../../utils/screenSizes";
@@ -24,6 +24,17 @@ function HeroSection() {
   const isMobile = useMediaQuery({
     query: `(max-width: ${mobileScreen}px)`,
   });
+
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+
+  let y = useTransform(scrollYProgress, [0, 1], [-320, 310]);
+  if (!isMobile) {
+    y = 0;
+  }
 
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -52,9 +63,9 @@ function HeroSection() {
   };
 
   return (
-    <div className="hero_section">
+    <motion.div className="hero_section" ref={container} style={{ y: y }}>
       {isMobile ? (
-        <div>Hello</div>
+        ""
       ) : (
         <motion.div
           className="cursor"
@@ -144,7 +155,7 @@ function HeroSection() {
         PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS
         PROJECTS
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

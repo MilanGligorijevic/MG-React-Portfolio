@@ -1,8 +1,15 @@
 .navbar_mobile {
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 55%;
   padding-top: 15px;
+}
+.navbar_menu_mobile {
+  position: fixed;
+  left: 0px;
+  height: 200vh;
+  width: 100vw;
+  background-color: yellow;
+  z-index: 120;
 }

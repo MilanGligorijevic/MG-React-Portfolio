@@ -1,5 +1,9 @@
 .menu_button {
+  position: fixed;
+  top: 2.5%;
+  right: 5%;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  z-index: 160;
 }
