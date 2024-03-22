@@ -8,10 +8,18 @@ import ProjectsSection from "../../components/ProjectsSection";
 import SkillsSection from "../../components/SkillsSection";
 import ContactSection from "../../components/ContactSection";
 import AboutSection from "../../components/AboutSection";
+import { useMediaQuery } from "react-responsive";
+import { mobileScreen } from "../../utils/screenSizes";
 
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import NavbarMobile from "../../components/NavbarMobile";
 
 function Home() {
+  //media queries
+  const isMobile = useMediaQuery({
+    query: `(max-width: ${mobileScreen}px)`,
+  });
+
   const sliderTextVariants = {
     initial: {
       x: "-50%",
@@ -34,20 +42,23 @@ function Home() {
 
   return (
     <div className="main_page">
-      <Navbar />
-      <Navigation />
+      {isMobile ? <NavbarMobile /> : <Navbar />}
+      {isMobile || <Navigation />}
       <HeroSection />
-      <ProjectsSection />
+      {isMobile || <ProjectsSection />}
       <div className="skills_about_contact_container">
-        <motion.div
-          className="sliding_skillset_text"
-          variants={sliderTextVariants}
-          initial="initial"
-          animate="animate"
-        >
-          SKILLSET SKILLSET SKILLSET SKILLSET SKILLSET SKILLSET SKILLSET
-          SKILLSET SKILLSET SKILLSET
-        </motion.div>
+        {isMobile || (
+          <motion.div
+            className="sliding_skillset_text"
+            variants={sliderTextVariants}
+            initial="initial"
+            animate="animate"
+          >
+            SKILLSET SKILLSET SKILLSET SKILLSET SKILLSET SKILLSET SKILLSET
+            SKILLSET SKILLSET SKILLSET
+          </motion.div>
+        )}
+        {isMobile && <ProjectsSection />}
         <SkillsSection />
         <AboutSection />
         <ContactSection />

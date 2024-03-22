@@ -20,3 +20,14 @@
     text-decoration: none;
   }
 }
+
+@media screen and (max-width: $small_screen) {
+  .btn {
+    width: 100px;
+    height: 46px;
+
+    &_text {
+      font-size: 22px;
+    }
+  }
+}

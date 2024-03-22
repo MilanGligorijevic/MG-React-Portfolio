@@ -4,6 +4,7 @@ import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import scrollWithOffset from "../../utils/functions";
+import MenuButton from "../MenuButton";
 
 const svgArrow = {
   hidden: { rotate: 360 },
@@ -54,7 +55,7 @@ function Navbar() {
 
   const textVariants = {
     hover: {
-      scale: 1.07,
+      scale: 1.03,
     },
   };
 
@@ -167,6 +168,7 @@ function Navbar() {
           </HashLink>
         </motion.div>
       </div>
+      <MenuButton />
     </motion.div>
   );
 }

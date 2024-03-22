@@ -40,3 +40,24 @@
     display: none;
   }
 }
+
+@media screen and (max-width: $small_screen) {
+  .projects_section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    margin-bottom: 7%;
+    .text_box {
+      .text_title {
+        font-size: 50px;
+        font-weight: 500;
+        margin-top: 20px;
+      }
+      .text_body {
+        font-size: 30px;
+        width: fit-content;
+      }
+    }
+  }
+}

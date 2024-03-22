@@ -111,3 +111,93 @@
   // transform: rotate(17.42deg);
   z-index: 3;
 }
+
+@media screen and (max-width: $small_screen) {
+  .skill_box {
+    width: 70%;
+    height: 150px;
+  }
+
+  .bootstrap {
+    position: static;
+
+    // transform: rotate(-3.58deg);
+    z-index: 2;
+  }
+
+  .css3 {
+    position: static;
+
+    // transform: rotate(10.68deg);
+    z-index: 4;
+  }
+
+  .figma {
+    position: static;
+
+    // transform: rotate(-10.49deg);
+    z-index: 4;
+  }
+
+  .firebase {
+    position: static;
+
+    // transform: rotate(13.05deg);
+    z-index: 2;
+  }
+
+  .html5 {
+    position: static;
+
+    // transform: rotate(-4.12deg);
+    z-index: 2;
+  }
+
+  .js {
+    position: static;
+
+    // transform: rotate(-25deg);
+    z-index: 3;
+  }
+
+  .react {
+    position: static;
+
+    // transform: rotate(25.68deg);
+    z-index: 4;
+  }
+
+  .redux {
+    position: static;
+
+    // transform: rotate(-25deg);
+    z-index: 1;
+  }
+
+  .sass {
+    position: static;
+
+    // transform: rotate(-23.92deg);
+  }
+
+  .ts {
+    position: static;
+
+    // transform: rotate(14.64deg);
+    z-index: 4;
+  }
+
+  .vue {
+    position: static;
+
+    // transform: rotate(17.42deg);
+    z-index: 3;
+  }
+
+  .framermotion {
+    position: static;
+
+    // transform: rotate(17.42deg);
+    z-index: 3;
+  }
+}

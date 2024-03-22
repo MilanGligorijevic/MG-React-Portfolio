@@ -32,3 +32,12 @@
     }
   }
 }
+
+@media screen and (max-width: $small_screen) {
+  .main_page {
+    .skills_about_contact_container {
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+  }
+}

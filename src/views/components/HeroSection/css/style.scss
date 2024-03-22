@@ -43,3 +43,34 @@
     opacity: 0.18;
   }
 }
+
+@media screen and (max-width: $small_screen) {
+  .hero_section {
+    width: 90%;
+    margin-top: 15%;
+    height: 60vh;
+    &-text {
+      font-size: 50px;
+      font-weight: 500;
+      @include text_color_white;
+    }
+
+    .hero_section-text {
+      position: relative;
+      margin-bottom: 10%;
+      .svg_arrow_mobile {
+        z-index: 5;
+        position: absolute;
+        top: 12%;
+        left: -3.5%;
+      }
+    }
+    .sliding_text_container {
+      width: 50%;
+      font-size: 9vh;
+      white-space: nowrap;
+      color: $color_5;
+      opacity: 0.18;
+    }
+  }
+}

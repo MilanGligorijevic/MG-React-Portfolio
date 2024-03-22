@@ -1,0 +1,46 @@
+@import "../../../../index.scss";
+
+.project_box_mobile {
+  height: 45vh;
+  background-color: #030303f1;
+  border-radius: 44.16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.137);
+  padding: 8px;
+  margin: 25px 0px;
+
+  .project_preview_mobile {
+    width: 90%;
+    height: 80%;
+    margin: 15px;
+    border-radius: 44px;
+    display: flex; /* Use Flexbox to center the image */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .project_image_mobile {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+    }
+  }
+
+  .project_info_mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .project_name_mobile {
+      font-size: 22px;
+      @include text_color_yellow;
+    }
+
+    .btn_visit_mobile {
+    }
+  }
+}

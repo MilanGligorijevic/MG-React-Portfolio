@@ -2,24 +2,38 @@ import React, { useEffect, useRef, useState } from "react";
 import "./css/style.scss";
 import ProjectBox from "../ProjectBox";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
 import webshopImage from "../../assets/img/webshop.PNG";
 import chatAppImage from "../../assets/img/chatappimage.PNG";
 import oldPortfolioImage from "../../assets/img/oldportfolio.PNG";
 import jtmPlastImage from "../../assets/img/jtmplastimage.PNG";
+import azWebShop from "../../assets/svgs/azwebshop.svg";
+import chatApp from "../../assets/svgs/chatapp.svg";
 import { useInView, useScroll, useTransform } from "framer-motion";
 import AnimateWord from "../AnimateWord";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
+import { mobileScreen } from "../../utils/screenSizes";
+import ProjectBoxMobile from "../ProjectBoxMobile";
 
 function ProjectsSection() {
+  //media queries
+  const isMobile = useMediaQuery({
+    query: `(max-width: ${mobileScreen}px)`,
+  });
+
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 210]);
+
+  let y = useTransform(scrollYProgress, [0, 1], [0, 210]);
+  if (isMobile) {
+    y = 0;
+  }
 
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -48,41 +62,66 @@ function ProjectsSection() {
           developed by myself.
         </div>
       </div>
-      <Swiper
-        navigation={true}
-        modules={[Navigation]}
-        spaceBetween={10}
-        slidesPerView={1}
-      >
-        <SwiperSlide className="slide ">
-          <ProjectBox
+      {isMobile ? (
+        <div>
+          <ProjectBoxMobile
             name={"A-Z webshop"}
-            image={webshopImage}
+            image={azWebShop}
             link={"https://main--illustrious-dusk-821b80.netlify.app/"}
           />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <ProjectBox
+          <ProjectBoxMobile
             name={"ChatApp"}
-            image={chatAppImage}
+            image={chatApp}
             link={"https://chatting-made-easy.netlify.app/"}
           />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <ProjectBox
+          <ProjectBoxMobile
             name={"JTM Plast"}
-            image={jtmPlastImage}
+            image={azWebShop}
             link={"https://www.jtmplast.rs/"}
           />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <ProjectBox
+          <ProjectBoxMobile
             name={"First Portfolio"}
-            image={oldPortfolioImage}
+            image={azWebShop}
             link={"https://clinquant-cuchufli-8dff01.netlify.app/"}
           />
-        </SwiperSlide>
-      </Swiper>
+        </div>
+      ) : (
+        <Swiper
+          navigation={true}
+          modules={[Navigation]}
+          spaceBetween={10}
+          slidesPerView={1}
+        >
+          <SwiperSlide className="slide ">
+            <ProjectBox
+              name={"A-Z webshop"}
+              image={webshopImage}
+              link={"https://main--illustrious-dusk-821b80.netlify.app/"}
+            />
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <ProjectBox
+              name={"ChatApp"}
+              image={chatAppImage}
+              link={"https://chatting-made-easy.netlify.app/"}
+            />
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <ProjectBox
+              name={"JTM Plast"}
+              image={jtmPlastImage}
+              link={"https://www.jtmplast.rs/"}
+            />
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <ProjectBox
+              name={"First Portfolio"}
+              image={oldPortfolioImage}
+              link={"https://clinquant-cuchufli-8dff01.netlify.app/"}
+            />
+          </SwiperSlide>
+        </Swiper>
+      )}
     </motion.div>
   );
 }

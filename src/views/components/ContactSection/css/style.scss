@@ -12,6 +12,7 @@
 .info_box {
   display: flex;
   flex-direction: column;
+
   .contact_title {
     @include text_color_white;
     font-size: 58px;
@@ -46,4 +47,56 @@
   white-space: nowrap;
   color: $color_5;
   opacity: 0.18;
+}
+
+@media screen and (max-width: $small_screen) {
+  .contact_section {
+    width: 90%;
+    gap: 5%;
+    margin-bottom: 8%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    .contact_title {
+      @include text_color_white;
+      font-size: 50px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .contact_socials {
+      gap: 20px;
+      margin-bottom: 30px;
+      align-self: center;
+    }
+    .contact_copyright {
+      @include text_color_white;
+      font-size: 16.75px;
+      display: flex;
+      align-self: center;
+      gap: 5px;
+    }
+  }
+
+  .email_svg {
+    align-self: center;
+    margin: 90px 0px;
+  }
+
+  // .sliding_text {
+  //   position: absolute;
+  //   top: -7%;
+  //   width: 50%;
+  //   font-size: 4vh;
+  //   white-space: nowrap;
+  //   color: $color_5;
+  //   opacity: 0.18;
+  // }
 }

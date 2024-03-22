@@ -23,7 +23,7 @@ function SkillBox(props) {
       initial="initial"
       whileHover="hover"
     >
-      <img src={props.svg} alt="skill"></img>
+      <img src={props.svg} className="skills_logo" alt="skill"></img>
     </motion.div>
   );
 }
