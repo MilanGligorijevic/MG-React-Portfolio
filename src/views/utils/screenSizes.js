@@ -1,3 +1,3 @@
-const mobileScreen = 362;
+const mobileScreen = 410;
 
 export { mobileScreen };
