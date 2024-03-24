@@ -1,7 +1,7 @@
 # Technologies used
 HTML, SCSS, JS, React & Framer Motion
 
-#Initial wireframe and design in Figma
+# Initial wireframe and design in Figma
 
 https://www.figma.com/file/9YTNDPWtESc0g7O3vt6QbG/Portfolio-design?type=design&node-id=2%3A3&mode=design&t=iw89Ix4yVJqvtU1V-1
 
