@@ -9,7 +9,7 @@ import SkillsSection from "../../components/SkillsSection";
 import ContactSection from "../../components/ContactSection";
 import AboutSection from "../../components/AboutSection";
 import { useMediaQuery } from "react-responsive";
-import { mobileScreen } from "../../utils/screenSizes";
+import { mobileScreen, largeMobileScreen } from "../../utils/screenSizes";
 
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import NavbarMobile from "../../components/NavbarMobile";
@@ -18,6 +18,10 @@ function Home() {
   //media queries
   const isMobile = useMediaQuery({
     query: `(max-width: ${mobileScreen}px)`,
+  });
+
+  const isLargeMobile = useMediaQuery({
+    query: `(max-width: ${largeMobileScreen}px)`,
   });
 
   const sliderTextVariants = {
@@ -42,12 +46,12 @@ function Home() {
 
   return (
     <div className="main_page">
-      {isMobile ? <NavbarMobile /> : <Navbar />}
-      {isMobile || <Navigation />}
+      {isMobile || isLargeMobile ? <NavbarMobile /> : <Navbar />}
+      {isMobile || isLargeMobile || <Navigation />}
       <HeroSection />
-      {isMobile || <ProjectsSection />}
+      {isMobile || isLargeMobile || <ProjectsSection />}
       <div className="skills_about_contact_container">
-        {isMobile || (
+        {isMobile || isLargeMobile || (
           <motion.div
             className="sliding_skillset_text"
             variants={sliderTextVariants}
@@ -58,7 +62,7 @@ function Home() {
             SKILLSET SKILLSET SKILLSET
           </motion.div>
         )}
-        {isMobile && <ProjectsSection />}
+        {(isMobile || isLargeMobile) && <ProjectsSection />}
         <SkillsSection />
         <AboutSection />
         <ContactSection />

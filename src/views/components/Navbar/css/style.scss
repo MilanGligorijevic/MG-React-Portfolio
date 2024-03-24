@@ -24,8 +24,44 @@
   }
 }
 
-@media screen and (max-width: $small_screen) {
-  // .main_navbar {
-  //   display: none;
-  // }
+@media screen and (max-width: $tablet_screen) {
+  .main_navbar {
+    width: 80vw;
+    height: 100px;
+
+    .main_logo {
+      .logo_M {
+        width: 42px;
+      }
+      .logo_arrow {
+        width: 42px;
+      }
+    }
+    .navbar_links {
+      .link {
+        font-size: 27px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabletMobile_screen) {
+  .main_navbar {
+    width: 80vw;
+    height: 100px;
+
+    .main_logo {
+      .logo_M {
+        width: 34px;
+      }
+      .logo_arrow {
+        width: 34px;
+      }
+    }
+    .navbar_links {
+      .link {
+        font-size: 24px;
+      }
+    }
+  }
 }

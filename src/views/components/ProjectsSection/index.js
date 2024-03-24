@@ -17,13 +17,28 @@ import { useInView, useScroll, useTransform } from "framer-motion";
 import AnimateWord from "../AnimateWord";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-import { mobileScreen } from "../../utils/screenSizes";
+import {
+  mobileScreen,
+  smallerTabletScreen,
+  tabletMobileScreen,
+  largeMobileScreen,
+} from "../../utils/screenSizes";
 import ProjectBoxMobile from "../ProjectBoxMobile";
 
 function ProjectsSection() {
   //media queries
   const isMobile = useMediaQuery({
     query: `(max-width: ${mobileScreen}px)`,
+  });
+  const isSmallerTablet = useMediaQuery({
+    query: `(max-width: ${smallerTabletScreen}px)`,
+  });
+  const isTabletMobile = useMediaQuery({
+    query: `(max-width: ${tabletMobileScreen}px)`,
+  });
+
+  const isLargeMobile = useMediaQuery({
+    query: `(max-width: ${largeMobileScreen}px)`,
   });
 
   const container = useRef(null);
@@ -64,7 +79,7 @@ function ProjectsSection() {
           developed by myself.
         </div>
       </div>
-      {isMobile ? (
+      {isMobile || isLargeMobile ? (
         <div>
           <ProjectBoxMobile
             name={"A-Z webshop"}
@@ -97,28 +112,28 @@ function ProjectsSection() {
           <SwiperSlide className="slide ">
             <ProjectBox
               name={"A-Z webshop"}
-              image={webshopImage}
+              image={isSmallerTablet ? azWebShop : webshopImage}
               link={"https://main--illustrious-dusk-821b80.netlify.app/"}
             />
           </SwiperSlide>
           <SwiperSlide className="slide">
             <ProjectBox
               name={"ChatApp"}
-              image={chatAppImage}
+              image={isSmallerTablet ? chatApp : chatAppImage}
               link={"https://chatting-made-easy.netlify.app/"}
             />
           </SwiperSlide>
           <SwiperSlide className="slide">
             <ProjectBox
               name={"JTM Plast"}
-              image={jtmPlastImage}
+              image={isSmallerTablet ? jtmPlast : jtmPlastImage}
               link={"https://www.jtmplast.rs/"}
             />
           </SwiperSlide>
           <SwiperSlide className="slide">
             <ProjectBox
               name={"First Portfolio"}
-              image={oldPortfolioImage}
+              image={isSmallerTablet ? resumeLogo : oldPortfolioImage}
               link={"https://clinquant-cuchufli-8dff01.netlify.app/"}
             />
           </SwiperSlide>

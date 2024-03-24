@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./css/style.scss";
 import { Link } from "react-router-dom";
 import MenuButton from "../MenuButton";
+import { HashLink } from "react-router-hash-link";
+import { AnimatePresence, motion } from "framer-motion";
 
 function NavbarMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,6 +13,42 @@ function NavbarMobile() {
     console.log(menuOpen);
   }
 
+  const menuVariants = {
+    initial: {
+      scaleY: 0,
+    },
+    animate: {
+      scaleY: 1,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+    exit: {
+      scaleY: 0,
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const linkVariants = {
+    initial: {
+      y: "30vh",
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+      },
+    },
+  };
   return (
     <>
       <div className="navbar_mobile">
@@ -70,17 +108,53 @@ function NavbarMobile() {
           </svg>
         </Link>
         <div onClick={toggleMenu}>
-          <MenuButton />
+          <MenuButton toggleMenu={menuOpen} />
         </div>
       </div>
-      {menuOpen && (
-        <div className="navbar_menu_mobile">
-          <div className="navbar_menu_mobile_item">Projects</div>
-          <div className="navbar_menu_mobile_item">Skills</div>
-          <div className="navbar_menu_mobile_item">About</div>
-          <div className="navbar_menu_mobile_item">Contact</div>
-        </div>
-      )}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            className="navbar_menu_mobile"
+            variants={menuVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            <HashLink
+              className="navbar_menu_mobile_link"
+              to="#projects"
+              smooth
+              onClick={() => setMenuOpen((prevState) => !prevState)}
+            >
+              Projects
+            </HashLink>
+            <HashLink
+              className="navbar_menu_mobile_link"
+              to="#skills"
+              smooth
+              onClick={() => setMenuOpen((prevState) => !prevState)}
+            >
+              Skills
+            </HashLink>
+            <HashLink
+              className="navbar_menu_mobile_link"
+              to="#about"
+              smooth
+              onClick={() => setMenuOpen((prevState) => !prevState)}
+            >
+              About
+            </HashLink>
+            <HashLink
+              className="navbar_menu_mobile_link"
+              to="#contact"
+              smooth
+              onClick={() => setMenuOpen((prevState) => !prevState)}
+            >
+              Contact
+            </HashLink>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

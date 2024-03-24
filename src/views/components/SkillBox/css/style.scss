@@ -112,6 +112,199 @@
   z-index: 3;
 }
 
+@media screen and (max-width: $tablet_screen) {
+  .skill_box {
+    width: 230px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: $smaller_tablet) {
+  .skill_box {
+    width: 210px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: $tabletMobile_screen) {
+  .skill_box {
+    width: 200px;
+    height: 150px;
+  }
+
+  .bootstrap {
+    position: absolute;
+    top: 31%;
+    left: 31%;
+    // transform: rotate(-3.58deg);
+    z-index: 2;
+  }
+
+  .css3 {
+    position: absolute;
+    top: 7%;
+    left: 29%;
+    // transform: rotate(10.68deg);
+    z-index: 4;
+  }
+
+  .figma {
+    position: absolute;
+    top: 55%;
+    left: 29%;
+    // transform: rotate(-10.49deg);
+    z-index: 4;
+  }
+
+  .firebase {
+    position: absolute;
+    top: 56%;
+    left: 61%;
+    // transform: rotate(13.05deg);
+    z-index: 2;
+  }
+
+  .html5 {
+    position: absolute;
+    top: 7%;
+    left: 46%;
+    // transform: rotate(-4.12deg);
+    z-index: 2;
+  }
+
+  .js {
+    position: absolute;
+    top: 12%;
+    left: 14%;
+    // transform: rotate(-25deg);
+    z-index: 3;
+  }
+
+  .react {
+    position: absolute;
+    top: 12%;
+    left: 63%;
+    // transform: rotate(25.68deg);
+    z-index: 4;
+  }
+
+  .redux {
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    // transform: rotate(-25deg);
+    z-index: 1;
+  }
+
+  .sass {
+    position: absolute;
+    top: 57%;
+    left: 16%;
+    // transform: rotate(-23.92deg);
+  }
+
+  .ts {
+    position: absolute;
+    top: 35%;
+    left: 14%;
+    // transform: rotate(14.64deg);
+    z-index: 4;
+  }
+
+  .vue {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    // transform: rotate(17.42deg);
+    z-index: 3;
+  }
+
+  .framermotion {
+    position: absolute;
+    top: 34%;
+    left: 63%;
+    // transform: rotate(17.42deg);
+    z-index: 3;
+  }
+}
+
+@media screen and (max-width: $largeMobile_screen) {
+  .skill_box {
+    width: 140px;
+    height: 120px;
+  }
+
+  .bootstrap {
+    position: static;
+
+    z-index: 2;
+  }
+
+  .css3 {
+    position: static;
+
+    z-index: 4;
+  }
+
+  .figma {
+    position: static;
+
+    z-index: 4;
+  }
+
+  .firebase {
+    position: static;
+
+    z-index: 2;
+  }
+
+  .html5 {
+    position: static;
+
+    z-index: 2;
+  }
+
+  .js {
+    position: static;
+
+    z-index: 3;
+  }
+
+  .react {
+    position: static;
+
+    z-index: 4;
+  }
+
+  .redux {
+    position: static;
+
+    z-index: 1;
+  }
+
+  .sass {
+    position: static;
+  }
+
+  .ts {
+    position: static;
+
+    z-index: 4;
+  }
+
+  .vue {
+    position: static;
+
+    z-index: 3;
+  }
+
+  .framermotion {
+    position: static;
+
+    z-index: 3;
+  }
+}
+
 @media screen and (max-width: $small_screen) {
   .skill_box {
     width: 70%;

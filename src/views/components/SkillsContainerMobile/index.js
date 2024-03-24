@@ -14,7 +14,6 @@ import vue from "../../assets/svgs/vue.svg";
 import framermotion from "../../assets/svgs/framermotion.svg";
 
 import SkillBox from "../SkillBox";
-import { motion, useScroll, useTransform } from "framer-motion";
 
 function SkillsContainerMobile() {
   return (

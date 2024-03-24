@@ -7,7 +7,12 @@ $color_6: #ffdb58;
 $color_black: #222222;
 $color_white: #faf9f6;
 
-$small_screen: 410px;
+$smaller_desktop: 1400px;
+$tablet_screen: 1200px;
+$smaller_tablet: 1000px;
+$tabletMobile_screen: 800px;
+$largeMobile_screen: 650px;
+$small_screen: 420px;
 
 @mixin text_color_white() {
   background: #faf9f6;

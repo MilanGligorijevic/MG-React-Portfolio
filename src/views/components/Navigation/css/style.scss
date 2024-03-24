@@ -32,3 +32,45 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet_screen) {
+  .main_navigation {
+    width: 370px;
+    height: 52px;
+    bottom: -110px;
+
+    .link_btn {
+      font-size: 21px;
+
+      .link {
+        &:hover {
+          color: $color_6;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $smaller_tablet) {
+  .main_navigation {
+    width: 330px;
+    height: 48px;
+    bottom: -110px;
+
+    .link_btn {
+      font-size: 20px;
+
+      .link {
+        &:hover {
+          color: $color_6;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabletMobile_screen) {
+  .main_navigation {
+    display: none;
+  }
+}

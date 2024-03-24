@@ -21,6 +21,39 @@
   }
 }
 
+@media screen and (max-width: $smaller_desktop) {
+  .btn {
+    width: 140px;
+    height: 48px;
+
+    &_text {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet_screen) {
+  .btn {
+    width: 120px;
+    height: 46px;
+
+    &_text {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: $smaller_tablet) {
+  .btn {
+    width: 110px;
+    height: 44px;
+
+    &_text {
+      font-size: 22px;
+    }
+  }
+}
+
 @media screen and (max-width: $small_screen) {
   .btn {
     width: 100px;

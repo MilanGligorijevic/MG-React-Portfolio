@@ -64,10 +64,11 @@ function Navbar() {
       variants={navbarVariants}
       animate={hidenNavbar ? "hidden" : "visible"}
     >
-      <Link to="/">
+      <Link to="/" className="main_logo">
         {/* <img className="logo_icon" src={logo} alt="logo" /> */}
         {/* logo M */}
         <motion.svg
+          className="logo_M"
           width="49"
           height="45"
           viewBox="0 0 49 45"
@@ -97,6 +98,7 @@ function Navbar() {
         </motion.svg>
         {/* logo arrow */}
         <motion.svg
+          className="logo_arrow"
           width="50"
           height="47"
           viewBox="0 0 50 47"

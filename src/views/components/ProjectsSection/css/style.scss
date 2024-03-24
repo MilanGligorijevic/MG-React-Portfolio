@@ -41,6 +41,188 @@
   }
 }
 
+@media screen and (max-width: $smaller_desktop) {
+  .projects_section {
+    width: 80%;
+    display: flex;
+    gap: 4%;
+    margin-bottom: 7%;
+    // position: sticky;
+    // top: 20%;
+
+    .text_box {
+      @include text_color_white;
+      .text_title {
+        font-size: 58px;
+        font-weight: 500;
+
+        margin-bottom: 50px;
+
+        .beautiful {
+          @include text_color_yellow;
+        }
+      }
+
+      .text_body {
+        font-size: 38px;
+        width: 400px;
+      }
+    }
+    .slide {
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffc800;
+    }
+    .swiper-button-disabled {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet_screen) {
+  .projects_section {
+    width: 90%;
+    gap: 2%;
+    margin-bottom: 10%;
+    // position: sticky;
+    // top: 20%;
+
+    .text_box {
+      margin-left: 5%;
+      .text_title {
+        font-size: 50px;
+        margin-bottom: 46px;
+      }
+
+      .text_body {
+        font-size: 30px;
+        width: 350px;
+      }
+    }
+    .slide {
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffc800;
+    }
+    .swiper-button-disabled {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $smaller_tablet) {
+  .projects_section {
+    width: 90%;
+    gap: 2%;
+    margin-bottom: 15%;
+
+    .text_box {
+      margin-left: 5%;
+      .text_title {
+        font-size: 50px;
+        margin-bottom: 46px;
+      }
+
+      .text_body {
+        font-size: 30px;
+        width: 320px;
+      }
+    }
+    .slide {
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffc800;
+    }
+    .swiper-button-disabled {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $tabletMobile_screen) {
+  .projects_section {
+    width: 90%;
+    gap: 1%;
+    margin-bottom: 15%;
+
+    .text_box {
+      margin-left: 5%;
+      .text_title {
+        font-size: 40px;
+        margin-bottom: 36px;
+      }
+
+      .text_body {
+        font-size: 24px;
+        width: 240px;
+      }
+    }
+    .slide {
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffc800;
+    }
+    .swiper-button-disabled {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $largeMobile_screen) {
+  .projects_section {
+    width: 90%;
+    gap: 1%;
+    margin-bottom: 15%;
+    flex-direction: column;
+
+    .text_box {
+      margin-left: 5%;
+      .text_title {
+        font-size: 40px;
+        margin-bottom: 36px;
+      }
+
+      .text_body {
+        font-size: 24px;
+        width: 340px;
+      }
+    }
+    .slide {
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffc800;
+    }
+    .swiper-button-disabled {
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: $small_screen) {
   .projects_section {
     width: 90%;

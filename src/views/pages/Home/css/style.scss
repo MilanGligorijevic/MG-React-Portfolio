@@ -33,6 +33,16 @@
   }
 }
 
+@media screen and (max-width: $tablet_screen) {
+  .main_page {
+    .skills_about_contact_container {
+      .sliding_skillset_text {
+        font-size: 5vh;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $small_screen) {
   .main_page {
     .skills_about_contact_container {

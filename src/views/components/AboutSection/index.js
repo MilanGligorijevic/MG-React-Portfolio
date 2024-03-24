@@ -109,6 +109,7 @@ function AboutSection() {
             {/* cv text svg */}
             {isMobile || (
               <svg
+                className="cv_svg"
                 width="234"
                 height="205"
                 viewBox="0 0 234 205"

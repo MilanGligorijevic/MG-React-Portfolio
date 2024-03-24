@@ -1139,8 +1139,20 @@ function ContactSection() {
           </motion.div>
         </motion.div>
         <div className="contact_copyright">
-          © 2024 Portfolio. by
-          <a href="https://github.com/MilanGligorijevic" target="_blank">
+          © 2024{" "}
+          <a
+            href="https://github.com/MilanGligorijevic/MG-React-Portfolio"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Portfolio.
+          </a>
+          by
+          <a
+            href="https://github.com/MilanGligorijevic"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               width="37"
               height="20"
@@ -1217,6 +1229,7 @@ function ContactSection() {
       {isMobile || (
         <div className="contact_section_image">
           <motion.img
+            className="contact_section_image-image"
             src={contactSectionImage}
             alt="let's work together"
             initial={{ opacity: 0.55 }}
