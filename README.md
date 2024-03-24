@@ -1,6 +1,10 @@
 # Technologies used
 HTML, SCSS, JS, React & Framer Motion
 
+# Initial wireframe and design in Figma
+
+https://www.figma.com/file/9YTNDPWtESc0g7O3vt6QbG/Portfolio-design?type=design&node-id=2%3A3&mode=design&t=iw89Ix4yVJqvtU1V-1
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
