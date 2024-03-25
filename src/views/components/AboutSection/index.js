@@ -140,7 +140,7 @@ function AboutSection() {
         <Button
           text={"Resume"}
           link={
-            "https://drive.google.com/file/d/1FRMbLAdJht26AgrR_uEc49I4qHr-lMlv/view?usp=sharing"
+            "https://drive.google.com/file/d/1szClTm9jvEEeQPit-WVaO9KvPG_brbl0/view?usp=sharing"
           }
         />
       </div>
