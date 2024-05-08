@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
   // &:hover {
   //   transition: 0.3s ease-in-out;
   //   transform: scale(1.1);
@@ -19,15 +19,15 @@
 
 .bootstrap {
   position: absolute;
-  top: 35%;
-  left: 38%;
+  top: 41%;
+  left: 41%;
   // transform: rotate(-3.58deg);
   z-index: 2;
 }
 
 .css3 {
   position: absolute;
-  top: 7%;
+  top: 3%;
   left: 33%;
   // transform: rotate(10.68deg);
   z-index: 4;
@@ -98,7 +98,7 @@
 
 .vue {
   position: absolute;
-  top: 33%;
+  top: 30%;
   left: 54%;
   // transform: rotate(17.42deg);
   z-index: 3;
@@ -110,6 +110,14 @@
   left: 67%;
   // transform: rotate(17.42deg);
   z-index: 3;
+}
+
+.tailwind {
+  position: absolute;
+  top: 26%;
+  left: 35%;
+  // transform: rotate(-3.58deg);
+  z-index: 2;
 }
 
 @media screen and (max-width: $smaller_desktop) {
@@ -139,10 +147,18 @@
     height: 150px;
   }
 
+  .tailwind {
+    position: absolute;
+    top: 23%;
+    left: 32%;
+    // transform: rotate(-3.58deg);
+    z-index: 2;
+  }
+
   .bootstrap {
     position: absolute;
-    top: 31%;
-    left: 31%;
+    top: 36%;
+    left: 36%;
     // transform: rotate(-3.58deg);
     z-index: 2;
   }
@@ -220,8 +236,8 @@
 
   .vue {
     position: absolute;
-    top: 33%;
-    left: 50%;
+    top: 25%;
+    left: 48%;
     // transform: rotate(17.42deg);
     z-index: 3;
   }
@@ -306,6 +322,12 @@
   }
 
   .framermotion {
+    position: static;
+
+    z-index: 3;
+  }
+
+  .tailwind {
     position: static;
 
     z-index: 3;
@@ -395,6 +417,13 @@
   }
 
   .framermotion {
+    position: static;
+
+    // transform: rotate(17.42deg);
+    z-index: 3;
+  }
+
+  .tailwind {
     position: static;
 
     // transform: rotate(17.42deg);

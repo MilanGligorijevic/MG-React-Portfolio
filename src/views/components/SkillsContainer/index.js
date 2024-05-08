@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./css/style.scss";
 import bootstrap from "../../assets/svgs/bootstrap.svg";
+import tailwind from "../../assets/svgs/tailwind.svg";
 import css3 from "../../assets/svgs/css3.svg";
 import figma from "../../assets/svgs/figma.svg";
 import firebase from "../../assets/svgs/firebase.svg";
@@ -41,6 +42,7 @@ function SkillsContainer() {
       <SkillBox svg={ts} class={"ts"} rotate={14.64} />
       <SkillBox svg={vue} class={"vue"} rotate={17.42} />
       <SkillBox svg={framermotion} class={"framermotion"} rotate={-25} />
+      <SkillBox svg={tailwind} class={"tailwind"} rotate={-20.58} />
     </motion.div>
   );
 }

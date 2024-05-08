@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./css/style.scss";
 import bootstrap from "../../assets/svgs/bootstrap.svg";
+import tailwind from "../../assets/svgs/tailwind.svg"
 import css3 from "../../assets/svgs/css3.svg";
 import figma from "../../assets/svgs/figma.svg";
 import firebase from "../../assets/svgs/firebase.svg";
@@ -21,6 +22,7 @@ function SkillsContainerMobile() {
       <div className="skills_title_mobile">Skillset</div>
       <div className="skills_container_mobile">
         <SkillBox svg={bootstrap} class={"bootstrap"} rotate={-3.58} />
+        <SkillBox svg={tailwind} class={"tailwind"} rotate={-14.58} />
         <SkillBox svg={css3} class={"css3"} rotate={8.68} />
         <SkillBox svg={figma} class={"figma"} rotate={-5.49} />
         <SkillBox svg={firebase} class={"firebase"} rotate={10.05} />
