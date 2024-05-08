@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
-import popcornImage from "../../assets/img/popcornapp.PNG";
+import popcornImage from "../../assets/img/popcornimage.PNG";
 import webshopImage from "../../assets/img/webshop.PNG";
 import chatAppImage from "../../assets/img/chatappimage.PNG";
 import oldPortfolioImage from "../../assets/img/oldportfolio.PNG";

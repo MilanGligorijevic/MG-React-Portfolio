@@ -112,6 +112,13 @@
   z-index: 3;
 }
 
+@media screen and (max-width: $smaller_desktop) {
+  .skill_box {
+    width: 235px;
+    height: 170px;
+  }
+}
+
 @media screen and (max-width: $tablet_screen) {
   .skill_box {
     width: 230px;
