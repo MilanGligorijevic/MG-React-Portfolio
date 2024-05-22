@@ -50,8 +50,8 @@ function AboutSection() {
             {inView ? <AnimateWord word="Milan" /> : <></>}
           </span>{" "}
           <br />
-          I'm aspiring web developer based in Belgrade, Serbia. <br /> I strive
-          for simple yet functional design in all aspects of my work.
+          I'm Frontend developer based in Belgrade, Serbia. <br /> I strive for
+          simple yet functional design in all aspects of my work.
         </div>
         {isMobile || (
           <div className="svg_about_arrow">

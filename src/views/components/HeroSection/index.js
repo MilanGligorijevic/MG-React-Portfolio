@@ -140,11 +140,11 @@ function HeroSection() {
             </svg>
           </div>
         )}
-        Aspiring{" "}
+        Frontend{" "}
         <motion.span className="web">
-          <AnimateWord word={"web"} />
+          <AnimateWord word={"developer"} />
         </motion.span>{" "}
-        developer <br /> from Belgrade
+        <br /> from Belgrade
       </div>
       <motion.div
         className="sliding_text_container"
