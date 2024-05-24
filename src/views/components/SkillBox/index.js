@@ -34,7 +34,7 @@ function SkillBox(props) {
       opacity: 0,
     },
     hover: {
-      opacity: 1,
+      opacity: 0.8,
       scale: 1.05,
       transition: {
         delay: 0.1,
