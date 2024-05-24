@@ -54,7 +54,10 @@ function Navbar() {
 
   const textVariants = {
     hover: {
-      scale: 1.03,
+      y: "12%",
+      transition: {
+        duration: 0.15,
+      },
     },
   };
 

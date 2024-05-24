@@ -30,19 +30,108 @@ function SkillsContainer() {
       ref={ref}
       style={{ padding: paddingChange }}
     >
-      <SkillBox svg={bootstrap} class={"bootstrap"} rotate={-3.58} />
-      <SkillBox svg={css3} class={"css3"} rotate={10.68} />
-      <SkillBox svg={figma} class={"figma"} rotate={-10.49} />
-      <SkillBox svg={firebase} class={"firebase"} rotate={13.05} />
-      <SkillBox svg={html5} class={"html5"} rotate={-4.12} />
-      <SkillBox svg={js} class={"js"} rotate={-25} />
-      <SkillBox svg={react} class={"react"} rotate={25.68} />
-      <SkillBox svg={redux} class={"redux"} rotate={-25} />
-      <SkillBox svg={sass} class={"sass"} rotate={-23.92} />
-      <SkillBox svg={ts} class={"ts"} rotate={14.64} />
-      <SkillBox svg={vue} class={"vue"} rotate={17.42} />
-      <SkillBox svg={framermotion} class={"framermotion"} rotate={-25} />
-      <SkillBox svg={tailwind} class={"tailwind"} rotate={-20.58} />
+      <SkillBox
+        svg={bootstrap}
+        class={"bootstrap"}
+        rotate={-3.58}
+        description={"Bootstrap had my heart but Tailwind took over."}
+      />
+      <SkillBox
+        svg={css3}
+        class={"css3"}
+        rotate={10.68}
+        description={
+          "I focus on pixel perfect solutions for better user experience and it would simply not be possible without CSS."
+        }
+      />
+      <SkillBox
+        svg={figma}
+        class={"figma"}
+        rotate={-10.49}
+        description={
+          "Figma helps me sharpen my eye for details by making pixel perfect wireframes and designs."
+        }
+      />
+      <SkillBox
+        svg={firebase}
+        class={"firebase"}
+        rotate={13.05}
+        description={
+          "My focus is mostly on Frontend and Firebase helps me handle Backend related stuff with ease whenever needed."
+        }
+      />
+      <SkillBox
+        svg={html5}
+        class={"html5"}
+        rotate={-4.12}
+        description={
+          "HTML is the core of web development. I structure content to be universally accessible."
+        }
+      />
+      <SkillBox
+        svg={js}
+        class={"js"}
+        rotate={-25}
+        description={
+          "I make my ideas work by using JavaScript, ensuring optimal performance."
+        }
+      />
+      <SkillBox
+        svg={react}
+        class={"react"}
+        rotate={25.68}
+        description={
+          "React is my framework of choice. It enables me to craft scalable projects with ease."
+        }
+      />
+      <SkillBox
+        svg={redux}
+        class={"redux"}
+        rotate={-25}
+        description={
+          "In case of large projects I use Redux for clean and centralized state menagement. In case of simpler projects, Context API and Reducers do just fine."
+        }
+      />
+      <SkillBox
+        svg={sass}
+        class={"sass"}
+        rotate={-23.92}
+        description={
+          "SASS makes dealing with CSS a lot simpler and cleaner and comes in handy for precise structuring and reusability."
+        }
+      />
+      <SkillBox
+        svg={ts}
+        class={"ts"}
+        rotate={14.64}
+        description={
+          "Some projects require high precision and code maintainability which is why I opt for TypeScript."
+        }
+      />
+      <SkillBox
+        svg={vue}
+        class={"vue"}
+        rotate={17.42}
+        description={
+          "Vue is my second framework of choice due to it's simplicity and excellent performance on smaller projects."
+        }
+      />
+      <SkillBox
+        svg={framermotion}
+        class={"framermotion"}
+        rotate={-25}
+        description={
+          "I use FramerMotion for all my animations. The idea is to bring pages to life."
+        }
+      />
+      <SkillBox
+        svg={tailwind}
+        class={"tailwind"}
+        rotate={-20.58}
+        description={
+          "Sometimes I prioritize speed and code-file simplicity which is exactly when Tailwind comes in handy."
+        }
+      />
     </motion.div>
   );
 }
