@@ -39,6 +39,30 @@ function ProjectsList() {
   return (
     <div className="projects_list">
       <a
+        href="https://hungry-reservations.netlify.app/"
+        target="_blank"
+        rel="noreferrer"
+        className="projects_list_link"
+      >
+        <motion.div
+          className="projects_list_item"
+          initial="initialLeft"
+          animate="animateRight"
+          whileHover="hover"
+        >
+          HUNGRY
+          <motion.div
+            className="projects_list_sliding_text"
+            variants={sliderTextVariants}
+          >
+            DEVELOPED WEB APPLICATION FOR MAKING RESERVATIONS IN LOCAL GREEK
+            RESTAURANT. I EXPANDED APP TO MORE EXAMPLE RESTAURANTS FOR POTENTIAL
+            COMMERCIAL USE IN THE FUTURE. APP IS MADE IN REACT AS A FRONTEND AND
+            FIREBASE AS A BACKEND
+          </motion.div>
+        </motion.div>
+      </a>
+      <a
         href="https://main--popcorn-movies-shows.netlify.app/"
         target="_blank"
         rel="noreferrer"
@@ -131,7 +155,7 @@ function ProjectsList() {
           </motion.div>
         </motion.div>
       </a>
-      <a
+      {/* <a
         href="https://clinquant-cuchufli-8dff01.netlify.app/"
         target="_blank"
         rel="noreferrer"
@@ -153,7 +177,7 @@ function ProjectsList() {
             IT SHOWCASES MY PROGRESS ON A FRONTEND JOURNEY SO FAR
           </motion.div>
         </motion.div>
-      </a>
+      </a> */}
     </div>
   );
 }

@@ -10,6 +10,7 @@ import webshopImage from "../../assets/img/webshop.PNG";
 import chatAppImage from "../../assets/img/chatappimage.PNG";
 import oldPortfolioImage from "../../assets/img/oldportfolio.PNG";
 import jtmPlastImage from "../../assets/img/jtmplastimage.PNG";
+import hungryApp from "../../assets/svgs/hungryApp.svg";
 import popcornApp from "../../assets/svgs/popcorapp.svg";
 import azWebShop from "../../assets/svgs/azwebshop.svg";
 import chatApp from "../../assets/svgs/chatapp.svg";
@@ -81,6 +82,11 @@ function ProjectsSection() {
       {isMobile || isLargeMobile ? (
         <div>
           <ProjectBoxMobile
+            name={"hungry"}
+            image={hungryApp}
+            link={"https://hungry-reservations.netlify.app/"}
+          />
+          <ProjectBoxMobile
             name={"Popcorn TV&M"}
             image={popcornApp}
             link={"https://main--popcorn-movies-shows.netlify.app/"}
@@ -99,11 +105,6 @@ function ProjectsSection() {
             name={"JTM Plast"}
             image={jtmPlast}
             link={"https://www.jtmplast.rs/"}
-          />
-          <ProjectBoxMobile
-            name={"First Portfolio"}
-            image={resumeLogo}
-            link={"https://clinquant-cuchufli-8dff01.netlify.app/"}
           />
         </div>
       ) : (
