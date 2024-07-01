@@ -15,17 +15,17 @@ function NavbarMobile() {
 
   const menuVariants = {
     initial: {
-      scaleY: 0,
+      x: "100%",
     },
     animate: {
-      scaleY: 1,
+      x: 0,
       transition: {
         duration: 0.3,
         ease: "easeInOut",
       },
     },
     exit: {
-      scaleY: 0,
+      x: "100%",
       transition: {
         duration: 0.2,
         ease: "easeInOut",
@@ -33,22 +33,6 @@ function NavbarMobile() {
     },
   };
 
-  const linkVariants = {
-    initial: {
-      y: "30vh",
-      opacity: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.4,
-      },
-    },
-  };
   return (
     <>
       <div className="navbar_mobile">
@@ -128,6 +112,16 @@ function NavbarMobile() {
             >
               Projects
             </HashLink>
+            <a
+              className="navbar_menu_mobile_link"
+              href="https://main--mg-my-articles.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              smooth
+              onClick={() => setMenuOpen((prevState) => !prevState)}
+            >
+              My articles
+            </a>
             <HashLink
               className="navbar_menu_mobile_link"
               to="#skills"

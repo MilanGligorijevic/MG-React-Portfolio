@@ -109,48 +109,6 @@ function ProjectsSection() {
         </div>
       ) : (
         <ProjectsList />
-        // <Swiper
-        //   navigation={true}
-        //   modules={[Navigation]}
-        //   spaceBetween={10}
-        //   slidesPerView={1}
-        // >
-        //   <SwiperSlide className="slide ">
-        //     <ProjectBox
-        //       name={"Popcorn TV&M"}
-        //       image={isSmallerTablet ? popcornApp : popcornImage}
-        //       link={"https://main--popcorn-movies-shows.netlify.app/"}
-        //     />
-        //   </SwiperSlide>
-        //   <SwiperSlide className="slide ">
-        //     <ProjectBox
-        //       name={"A-Z webshop"}
-        //       image={isSmallerTablet ? azWebShop : webshopImage}
-        //       link={"https://main--illustrious-dusk-821b80.netlify.app/"}
-        //     />
-        //   </SwiperSlide>
-        //   <SwiperSlide className="slide">
-        //     <ProjectBox
-        //       name={"ChatApp"}
-        //       image={isSmallerTablet ? chatApp : chatAppImage}
-        //       link={"https://chatting-made-easy.netlify.app/"}
-        //     />
-        //   </SwiperSlide>
-        //   <SwiperSlide className="slide">
-        //     <ProjectBox
-        //       name={"JTM Plast"}
-        //       image={isSmallerTablet ? jtmPlast : jtmPlastImage}
-        //       link={"https://www.jtmplast.rs/"}
-        //     />
-        //   </SwiperSlide>
-        //   <SwiperSlide className="slide">
-        //     <ProjectBox
-        //       name={"First Portfolio"}
-        //       image={isSmallerTablet ? resumeLogo : oldPortfolioImage}
-        //       link={"https://clinquant-cuchufli-8dff01.netlify.app/"}
-        //     />
-        //   </SwiperSlide>
-        // </Swiper>
       )}
     </motion.div>
   );

@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import "./css/style.scss";
-import {
-  easeInOut,
-  motion,
-  useMotionValueEvent,
-  useScroll,
-} from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
 import scrollWithOffset from "../../utils/functions";
 

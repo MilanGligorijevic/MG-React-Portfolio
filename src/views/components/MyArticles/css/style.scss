@@ -1,0 +1,9 @@
+@import "../../../../index.scss";
+
+.my_articles {
+  position: fixed;
+  top: 50px;
+  right: 74px;
+  z-index: 1000;
+  cursor: pointer;
+}

@@ -11,8 +11,9 @@ import AboutSection from "../../components/AboutSection";
 import { useMediaQuery } from "react-responsive";
 import { mobileScreen, largeMobileScreen } from "../../utils/screenSizes";
 
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import NavbarMobile from "../../components/NavbarMobile";
+import MyArticles from "../../components/MyArticles";
 
 function Home() {
   //media queries
@@ -47,6 +48,7 @@ function Home() {
   return (
     <div className="main_page">
       {isMobile || isLargeMobile ? <NavbarMobile /> : <Navbar />}
+      {isMobile || isLargeMobile || <MyArticles />}
       {isMobile || isLargeMobile || <Navigation />}
       <HeroSection />
       {isMobile || isLargeMobile || <ProjectsSection />}

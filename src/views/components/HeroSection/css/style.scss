@@ -130,12 +130,12 @@
 @media screen and (max-width: $largeMobile_screen) {
   .hero_section {
     width: 80%;
-    height: 480px;
-    margin-top: 6%;
+    height: 370px;
+    margin-top: 8%;
     margin-bottom: 1%;
 
     &-text {
-      font-size: 64px;
+      font-size: 54px;
     }
     .cursor {
       display: none;
